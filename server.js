@@ -109,6 +109,7 @@ io.on("connection", (socket) => {
     }
   });
 
+  // counts the amount of users 
   let count = io.engine.clientsCount;
   io.emit("user-count", count);
   console.log(count);
